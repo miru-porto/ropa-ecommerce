@@ -5,7 +5,7 @@ export const PRODUCTS = [
         name: 'Pan Baguette',
         description: 'Rico pan baguette',
         weight: '1/2 kg',
-        price: 10,
+        price: 10
     },
     {
         id: 2,
