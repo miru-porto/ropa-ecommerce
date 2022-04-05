@@ -10,5 +10,8 @@ export const styles = StyleSheet.create({
         fontSize: 16,
         textAlign: 'center',
         marginVertical: 20,
+    },
+    cartButton : {
+        marginVertical: 20
     }
 })
