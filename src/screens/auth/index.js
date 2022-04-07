@@ -41,7 +41,7 @@ const Auth = ({ navigation }) => {
     return (
         <KeyboardAvoidingView
             style={styles.container}
-            behavior="padding"
+            behavior="height"
             keyboardVerticalOffset={50}
             enabled
         >

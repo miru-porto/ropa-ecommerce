@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F5FCFF',
+        backgroundColor: colors.primaryColor,
     },
     containerCard: {
         height: height / 2,

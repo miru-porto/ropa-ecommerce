@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
+// import MainNavigator from './main';
 import MainNavigator from './main';
 import AuthNavigator from './auth';
 import { useSelector } from 'react-redux';
