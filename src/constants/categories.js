@@ -1,26 +1,26 @@
 export const CATEGORIES = [
     {
         id: 1,
-        name: 'Harinas Puras',
-        color: '#49C6E5',
-        description: 'Panes de harinas puras'
+        name: 'Pantalones',
+        color: '#7B2CBF',
+        description: 'Ropa de la parte inferior del cuerpo. Pantalones y jeans'
     },
     {
         id: 2,
-        name: 'Harinas Integrales',
-        color: '#00BD9D',
-        description: 'Panes de harinas integrales'
+        name: 'Camisas y Blusas',
+        color: '#9D4EDD',
+        description: 'Camisas y blusas femeninas de mezquilla y de cuerina'
     },
     {
         id: 3,
-        name: 'Harinas de Trigo',
-        color: '#8BD7D2',
-        description: 'Panes de harinas de trigo'
+        name: 'Vestidos y Polleras',
+        color: '#C77DFF',
+        description: 'Ropa de una pieza para la parte inferior del cuerpo'
     },
     {
         id: 4,
-        name: 'Harinas de Maíz',
-        color: '#54DEFD',
-        description: 'Panes de harinas de maíz'
+        name: 'Camperas',
+        color: '#E0AAFF',
+        description: 'Abrigos ideales para el invierno'
     },
 ]

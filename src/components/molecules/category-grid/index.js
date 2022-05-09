@@ -4,9 +4,9 @@ import { styles } from './styles';
 
 const CategoryGrid = ({ item, onSelected }) => {
     return (    
-         <View style={[styles.container, {backgroundColor: item.color}]}>
+         <View style={[styles.gridItem, {backgroundColor: item.color}]}>
             <TouchableOpacity 
-                style={styles.touchable}
+                style={styles.container}
                 onPress={() => onSelected(item)}    
             >
                 <View>

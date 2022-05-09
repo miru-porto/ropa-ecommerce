@@ -10,9 +10,8 @@ const CategoryProducts = ({ item, onSelected }) => {
                 onPress={() => onSelected(item)}    
             >
                 <View style={styles.details}>
-                    <Text style={styles.title}>{item.name}</Text>
+                    <Text style={styles.name}>{item.name}</Text>
                     <Text style={styles.description}>{item.description}</Text>
-                    <Text style={styles.price}>${item.price}</Text>
                 </View>
             </TouchableOpacity>
          </View>
