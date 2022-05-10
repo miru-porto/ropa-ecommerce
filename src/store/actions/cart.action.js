@@ -13,7 +13,7 @@ export const removeItem = id => ({
   id,
 });
 
-export const confirmCart = (cart, total, user) => {
+export const confirmCart = (cart, total, user, setModalVisible) => {
   return async dispatch => {
     try {
       const response = await fetch(`${URL_API}/order.json`, {
@@ -25,7 +25,11 @@ export const confirmCart = (cart, total, user) => {
       });
 
       const result = await response.json();
-      console.log(result);
+      if(result.name){
+        setModalVisible(true);
+      }
+      console.log(result)
+      console.log(result.name);
       dispatch({
         type: COMFIRM_CART,
         cart: result,

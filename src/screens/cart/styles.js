@@ -31,4 +31,45 @@ export const styles = StyleSheet.create({
         padding: 8,
         color: colors.primaryColor,
     },
+    modalText:{
+        fontSize: 18,
+        fontFamily: 'OpenSans-Bold',
+        padding: 8,
+        color: colors.textColor,
+        textAlign: 'center',
+        
+    },
+    centeredView:{
+        flex: 1,
+        flexGrow: 0.2,
+        marginTop: 300,
+        backgroundColor: colors.backgroundColor,
+        padding: 20,
+        alignItems: 'center',
+        justifyContent: 'center',
+        maxWidth: '90%',
+        alignSelf: "center",
+        shadowColor: "#000",
+        shadowOffset: {
+	        width: 0,
+	        height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5,
+        },
+    textStyle:{
+        fontSize: 16,
+        fontFamily: 'OpenSans-Bold',
+        padding: 8,
+        color: colors.primaryColor,
+        textAlign: 'center',
+        width: 60,
+        alignSelf: "center",
+        
+        
+    },
+    modalView:{
+        flexDirection: "column",
+    }
 });

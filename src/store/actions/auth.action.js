@@ -16,7 +16,7 @@ export const signup = (email, password) => {
 
         const result = await response.json();
 
-        console.warn(result);
+        console.log(result);
 
         dispatch({
             type: SIGNUP,
@@ -24,7 +24,7 @@ export const signup = (email, password) => {
             userId: result.localId
         });
     } catch (error) {
-        console.warn(error);
+        console.log(error);
     }
     }
 }
@@ -41,7 +41,7 @@ export const signin = (email, password) => {
 
         const result = await response.json();
 
-        console.warn(result);
+        console.log(result);
 
         dispatch({
             type: SIGNIN,

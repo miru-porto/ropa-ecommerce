@@ -7,7 +7,9 @@ import { colors } from '../constants/themes';
 
 const Stack = createNativeStackNavigator();
 
-const CartNavigator = () => {
+const CartNavigator = ({navigation}) => {
+    const goToShop = () => navigation.navigate('ShopStack')
+
     return (
         <Stack.Navigator
             initialRouteName='Cart'
@@ -22,7 +24,9 @@ const CartNavigator = () => {
                 }
             }}
         >
-            <Stack.Screen name='Cart' component={Cart} />
+            <Stack.Screen name='Cart'>
+                {props => <Cart {...props} goToShop={goToShop}/>}
+            </Stack.Screen>
         </Stack.Navigator>
     )
 }
