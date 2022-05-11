@@ -1,8 +1,8 @@
 import React from "react";
 import { Text, View, TouchableOpacity } from "react-native";
-import IonicIcons from "react-native-vector-icons/Ionicons";
+//import IonicIcons from "react-native-vector-icons/Ionicons";
 import { styles } from "./styles";
-
+import IonicIcons from 'react-native-ionicons';
 
 const OrderItem = ({ data, onDelete, onDetails }) => {
     const { date, id, total } = data;

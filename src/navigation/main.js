@@ -32,8 +32,8 @@ const MainNavigator = () => {
         component={CartNavigator}
         options={{
           tabBarLabel: 'Cart',
-          tabBarIcon: ({color, size}) => (
-            <MaterialCommunityIcons name="home" color={colors.primaryColor} size={size} />
+          tabBarIcon: ({size}) => (
+            <MaterialCommunityIcons name="cart" color={colors.primaryColor} size={size} />
           ),
         }}
       />
@@ -42,8 +42,8 @@ const MainNavigator = () => {
         component={OrderNavigator}
         options={{
           tabBarLabel: 'Order',
-          tabBarIcon: ({focused}) => (
-            <MaterialCommunityIcons name="reorder" color={colors.primaryColor} size={20} />
+          tabBarIcon: ({size}) => (
+            <MaterialCommunityIcons name="reorder" color={colors.primaryColor} size={size} />
           ),
         }}
       />
@@ -53,8 +53,8 @@ const MainNavigator = () => {
         options={{
           tabBarLabel: 'Shipping',
 
-          tabBarIcon: ({focused}) => (
-            <MaterialCommunityIcons name="truck" color={colors.primaryColor} size={20} />
+          tabBarIcon: ({size}) => (
+            <MaterialCommunityIcons name="truck" color={colors.primaryColor} size={size} />
           ),
         }}
       />
