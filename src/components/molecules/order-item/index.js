@@ -1,6 +1,5 @@
 import React from "react";
 import { Text, View, TouchableOpacity } from "react-native";
-//import IonicIcons from "react-native-vector-icons/Ionicons";
 import { styles } from "./styles";
 import IonicIcons from 'react-native-ionicons';
 
