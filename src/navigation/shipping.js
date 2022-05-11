@@ -8,7 +8,6 @@ const ShippingScreen = ({location, style, children}) => {
     ? `${MAPS.URL}/staticmap?center=${location.latitude},${location.longitude}&zoom=${MAPS.ZOOM}&size=${MAPS.SIZE}&maptype=${MAPS.MAP_TYPE}&markers=color:blue%7Clabel:S%7C${location.latitude},${location.longitude}&key=${MAPS.API_KEY}`
     : '';
 
-
   return (
     <View style={{...styles.MapPreview, ...style}}>
       {location ? (
@@ -16,42 +15,19 @@ const ShippingScreen = ({location, style, children}) => {
       ) : (
         children
       )}
-    </View>)
- 
+    </View>
+  );
 };
 
-
 const styles = StyleSheet.create({
-    MapPreview: {
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    mapImage: {
-        width: '100%',
-        height: '100%'
-    }
-})
+  MapPreview: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  mapImage: {
+    width: '100%',
+    height: '100%',
+  },
+});
 
 export default ShippingScreen;
-
-/*
-<Stack.Navigator
-            initialRouteName='Order'
-            screenOptions={{
-                headerStyle: {
-                    backgroundColor: Platform.OS === 'android' ? colors.primaryColor : '',
-                },
-                headerTintColor: Platform.OS === 'android' ? 'white' : colors.primaryColor,
-                headerTitleStyle: {
-                    fontFamily: 'OpenSans-Bold',
-                    fontSize: 17
-                }
-            }}
-        >
-            <Stack.Screen name='Order' component={Order} />
-        </Stack.Navigator>
-
-
-
-
-*/

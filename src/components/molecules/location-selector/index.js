@@ -3,26 +3,12 @@ import {View, Text, Alert, Button} from 'react-native';
 import colors from '../../../constants/colors';
 import Geolocation from '@react-native-community/geolocation';
 import ShippingScreen from '../../../navigation/shipping';
-//import {useRoute} from '@react-navigation/native';
 
 import {styles} from './styles';
 
 const LocationSelector = ({onLocation}) => {
   const [pickedLocation, setPickedLocation] = useState(null);
 
-
-  /*
-  const route = useRoute();
-  const mapLocation = route.params?.location;
-  useEffect(() => {
-    console.log('renderizando')
-    if (mapLocation) {
-      setPickedLocation(mapLocation);
-      onLocation(mapLocation);
-    }
-  }, [mapLocation]);
-  */
-  
   const getLocation = () => {
     Geolocation.getCurrentPosition(
       position => {
@@ -50,11 +36,6 @@ const LocationSelector = ({onLocation}) => {
     );
   };
 
-  /*
-  const pickLocation = () => {
-    onMapLocation();
-  };
-  */
   return (
     <View style={styles.container}>
       <View style={styles.preview}>
@@ -62,21 +43,12 @@ const LocationSelector = ({onLocation}) => {
           <Text>No location chosen yet!</Text>
         </MapsPreview>
       </View>
-      {/*
-      
-      <View style={styles.action}>
-        <Button
-          title="Get Location"
-          color={colors.primaryColor}
-          onPress={() => getLocation()}
-        />
-       */}
-        <Button
-          title="Pick Location in Maps"
-          color={colors.primaryColor}
-          onPress={() => getLocation()}
-        />
-      
+
+      <Button
+        title="Pick Location in Maps"
+        color={colors.primaryColor}
+        onPress={() => getLocation()}
+      />
     </View>
   );
 };
